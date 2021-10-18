@@ -2,37 +2,94 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #e8dcb7b3;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+}
+
+.juegos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.item {
+  width: 30%;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px 0;
+  margin: 5px;
+  position: relative;
+  box-shadow: 2px 2px 7px #999;
+  background-color: #dc9e2c64;
+}
+.delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.delete:hover {
+  color: rgb(197, 14, 14);
+  cursor:pointer;
+}
+.stats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+}
+.stats .stat {
+  width: 30%;
+  border: 1px solid gray;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  padding: 10px 0;
 }
-
-.App-link {
-  color: #61dafb;
+.stats .stat:hover {
+  color: rgb(30, 90, 243);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nuevo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+  margin: auto;
+  text-align: left;
+  border: solid #dc9e2c64 5px;
+  padding: 5px;
+}
+.nuevo > div  {
+  margin: 5px 0;
+}
+.nuevo label {
+  width: 35%;
+  display: inline-block;
+}
+button {
+  box-shadow: 2px 2px 5px #999;
+  margin: 10px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: #f2e2c5cd;
+}
+button:hover {
+  background-color: #ddbc7fcd;
+  cursor:pointer;
+}
+input {
+  margin: 7px;
+  width: 27%;
+}
+h4:hover {
+  color: #ffa600;
+  font-size: 1.01em;
+  cursor:pointer;
 }
