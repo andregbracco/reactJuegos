@@ -1,13 +1,27 @@
+
 .App {
   text-align: center;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 1em;
+  text-shadow: black 0.1em 0.2em 0.5em;
 }
-
 body {
-  background-color: #e8dcb7b3;
+  background-image: url("./fondo.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #f8efe4de;
+  background-repeat: no-repeat;
+  background-attachment: fixed
 }
-
+#root{
+  background-color: rgba(255,255,255,0.01);
+}
 .App-header {
   font-size: calc(10px + 2vmin);
+  background-color: rgba(224, 255, 255, 0.171);
+  padding: 1px;
 }
 
 .juegos {
@@ -25,6 +39,10 @@ body {
   position: relative;
   box-shadow: 2px 2px 7px #999;
   background-color: #dc9e2c64;
+}
+.item:hover{
+  background-color: #dc9e2c85;
+  cursor:pointer;
 }
 .delete {
   position: absolute;
@@ -61,9 +79,15 @@ body {
   justify-content: center;
   width: 55%;
   margin: auto;
+  margin-top: 50px;
   text-align: left;
-  border: solid #dc9e2c64 5px;
+  border: solid #dc9e2cbe 5px;
   padding: 5px;
+  -webkit-box-shadow: 10px 10px 22px 2px rgba(163,163,163,1);
+  -moz-box-shadow: 10px 10px 22px 2px rgba(163,163,163,1);
+  box-shadow: 10px 10px 22px 2px rgba(163,163,163,1);
+  color: #dc9e2cbe;
+  font-size: 1.3em;
 }
 .nuevo > div  {
   margin: 5px 0;
@@ -72,6 +96,10 @@ body {
   width: 35%;
   display: inline-block;
 }
+.nuevo:hover{
+  background-color: #dc9e2c1c;
+}
+
 button {
   box-shadow: 2px 2px 5px #999;
   margin: 10px;
@@ -79,6 +107,8 @@ button {
   border-radius: 10px;
   font-size: 20px;
   background-color: #f2e2c5cd;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 button:hover {
   background-color: #ddbc7fcd;
@@ -90,6 +120,5 @@ input {
 }
 h4:hover {
   color: #ffa600;
-  font-size: 1.01em;
-  cursor:pointer;
+  
 }

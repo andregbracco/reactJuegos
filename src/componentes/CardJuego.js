@@ -9,13 +9,13 @@ const CardJuego = ({datos, setJuegos, editar}) => {
   }
 
   return (
-      <div className="item">
+      <div onClick={() => editar(datos)} className="item">
           <FontAwesomeIcon 
             onClick={()=> eliminar(datos.nombre)} 
             className="delete" icon={faTrashAlt} 
           />
 
-          <h4 onClick={() => editar(datos)}>{datos.nombre}</h4>
+          <h4>{datos.nombre}</h4>
 
           <div className="stats">
             <div className="stat jugadores">
