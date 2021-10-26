@@ -27,7 +27,7 @@ const CardJuego = ({datos, setJuegos, editar}) => {
               {datos.duracion.desde}-{datos.duracion.hasta} min</div>
             <div className="stat edades">
               <FontAwesomeIcon icon={faBirthdayCake} />
-              {datos.edad}+ años</div>
+              {datos.edad}+ years</div>
           </div>
       </div>
   )

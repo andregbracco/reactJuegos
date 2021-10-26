@@ -1,6 +1,6 @@
 export default [
     {
-      nombre : 'Mansiones de la locura',
+      nombre : 'Mansions of Madness',
       cantJugadores : { desde : 2, hasta : 5},
       duracion : { desde : 60, hasta : 360},
       edad : 13,

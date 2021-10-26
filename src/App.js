@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <DatosNUevoJuego callback={setJuegos} juegoEditado={juegoEditado}/>
       <header className="App-header">
-        <h1>Juegos</h1>
+        <h1>Board Games</h1>
       </header>
       <div className="juegos">
         {juegos.map(juego => 

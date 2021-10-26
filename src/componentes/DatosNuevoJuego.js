@@ -80,29 +80,29 @@ const DatosNUevoJuego = ({callback, juegoEditado}) => {
     return (
         <div>
           <header className="App-header">
-            <h1>Nuevo Juego</h1>
+            <h1>New Game</h1>
           </header>
           <div className="nuevo">
             <div>
-              <label>Nombre</label>
-              <input onChange={tomarNombre} placeholder="Nombre" value={juego.nombre}></input>
+              <label>Name</label>
+              <input onChange={tomarNombre} placeholder="Name" value={juego.nombre}></input>
             </div>
             <div>
-              <label>Cantidad de Jugadores</label>
-                <input type="number" onChange={tomarCantDesde} placeholder="Desde" value={juego.cantJugadores.desde}></input>
-                <input type="number" onChange={tomarCantHasta} placeholder="Hasta" value={juego.cantJugadores.hasta}></input>
+              <label>Players</label>
+                <input type="number" onChange={tomarCantDesde} placeholder="From" value={juego.cantJugadores.desde}></input>
+                <input type="number" onChange={tomarCantHasta} placeholder="To" value={juego.cantJugadores.hasta}></input>
             </div>
             <div>
-              <label>Duración</label>
-                <input type="number" onChange={tomarDurDesde} placeholder="Desde" value={juego.duracion.desde}></input>
-                <input type="number" onChange={tomarDurHasta} placeholder="Hasta" value={juego.duracion.hasta}></input>
+              <label>Duration</label>
+                <input type="number" onChange={tomarDurDesde} placeholder="From" value={juego.duracion.desde}></input>
+                <input type="number" onChange={tomarDurHasta} placeholder="To" value={juego.duracion.hasta}></input>
             </div>
             <div>
-              <label>Edad sugerida</label>
-                <input type="number" onChange={tomarEdad} placeholder="Desde" value={juego.edad}></input>
+              <label>Suggested Age</label>
+                <input type="number" onChange={tomarEdad} placeholder="From" value={juego.edad}></input>
             </div>
           </div>
-          <button onClick={crearJuego} disabled={invalidState} >Guardar</button>
+          <button onClick={crearJuego} disabled={invalidState} >Save</button>
         </div>
     )
 }
